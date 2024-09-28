@@ -1,0 +1,67 @@
+.header {
+  align-items: center;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  background-color: #98bacd; /* Убедитесь, что здесь правильный цвет */
+  padding: 20px;
+}
+
+.cont {
+  display: flex;
+  justify-content: space-between; /* Чтобы разделить текст и кнопки */
+  align-items: center;
+  width: 100%; /* Занять всю ширину контейнера */
+}
+.head_home {
+  display: flex;
+  justify-content: space-between; /* Это разделяет текст и кнопки */
+  align-items: center;
+  gap: 90px;
+
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+.head {
+  text-align: center;
+  display: flex;
+  gap: 50px;
+}
+
+.btn_home {
+  justify-content: flex-end;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  // padding-left: 80px;
+}
+
+.btn_head {
+}
+.header_btn {
+  padding: 8px 32px 8px 32px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: 1px solid rgb(0, 74, 96);
+  border-radius: 8px;
+}
+
+.header_btn_two {
+  color: rgb(255, 255, 255);
+  font-family: Frank Ruhl Libre;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+  border-radius: 8px;
+  flex-direction: row;
+  padding: 8px 22px 8px 22px;
+  background: rgb(0, 74, 96);
+}
