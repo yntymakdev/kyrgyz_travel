@@ -1,8 +1,10 @@
 .img {
   display: flex;
+  justify-content: center;
   align-items: center;
   // justify-content: space-between;
   gap: 70px;
+  margin-left: -90px;
   h1 {
     color: rgb(0, 74, 96);
     font-family: "Abril Fatface";
@@ -32,6 +34,7 @@
     font-size: 64px;
     font-weight: 400;
     line-height: 86px;
+    margin-left: 40px;
     letter-spacing: 0%;
     // text-align: center;
   }
@@ -41,7 +44,6 @@
   position: relative;
   border-radius: 8px;
   border-radius: 8px;
-
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
   background: rgb(0, 0, 0);
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
@@ -135,27 +137,43 @@
   margin-top: 110px;
   width: 80px;
 }
-
 .heartContainer {
   position: absolute;
-  top: 10px; /* Расположение от верхнего края изображения */
-  right: 10px; ///* Расположение от правого края изображения */
+  top: 10px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50px; /* Размер круга */
   height: 50px; /* Размер круга */
-  border-radius: 50%; /* Делаем круг */
-  background-color: rgba(
-    255,
-    0,
-    0,
-    0.1
-  ); /* Цвет фона с прозрачностью (пример) */
-  border: 2px solid red; /* Граница круга */
+  border-radius: 50%; /* Круглая форма */
+  overflow: hidden; /* Скрыть все, что выходит за пределы круга */
+  background-color: transparent; /* Без фона на контейнере */
 }
 
-.heartContainer svg {
-  //  / width: 24px; /* Размер иконки */
-  // height: 24px; /* Размер иконки */
+.heartMask {
+  color: rgb(255, 255, 255); /* Цвет иконки */
+  font-size: 24px; /* Размер иконки */
+}
+
+.carta {
+  display: flex;
+  // flex-direction: column;
+  // width: 100%;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cu {
+  p {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
 }
