@@ -2,11 +2,10 @@ import React from "react";
 import s from "./Header.module.scss";
 import { ArrowUpRight, ChevronDown, Search } from "lucide-react";
 import secImg from "@/logic/services/clients/pages/static/home/img/image 989.png";
-// import s from "./Welcome.module.scss";
-// import a from "./img/instagram.png";
-// import b from "./img/f_logo_RGB-Blue_512 1 (2).png";
-// import c from "./img/VK Logo _ Main (1).png";
-// import d from "./img/Mail _ undefined (2).png";
+import a from "../static/home/Welcome/img/instagram.png";
+import b from "../static/home/Welcome/img/f_logo_RGB-Blue_512 1 (2).png";
+import c from "../static/home/Welcome/img/VK Logo _ Main (1).png";
+import d from "../static/home/Welcome/img/Mail _ undefined (2).png";
 import Image from "next/image";
 const Header = () => {
   return (
@@ -41,12 +40,12 @@ const Header = () => {
               <div className={s.block}></div>
             </div>
           </div>
-          {/* <div className={s.icon}>
+          <div className={s.icon}>
             <Image src={a} alt="img" quality={70} width={24} height={24} />
             <Image src={b} alt="img" quality={70} width={24} height={24} />
             <Image src={c} alt="img" quality={70} width={24} height={24} />
             <Image src={d} alt="img" quality={70} width={24} height={24} />
-          </div> */}
+          </div>
         </div>
         <div className="container">
           <div className={s.header}>
