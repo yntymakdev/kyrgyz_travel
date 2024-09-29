@@ -1,6 +1,6 @@
 import React from "react";
 import Welcome from "../Welcome/Welcome";
-// import SectionHome from "../SectionHome/SectionHome";
+import SectionHome from "../SectionHome/SectionHome";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       <br />
       <br />
       <Welcome />
-      {/* <SectionHome /> */}
+      <SectionHome />
     </div>
   );
 };

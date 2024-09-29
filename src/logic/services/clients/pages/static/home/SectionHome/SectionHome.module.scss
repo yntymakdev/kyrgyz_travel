@@ -1,0 +1,101 @@
+.secText {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.overlay {
+  position: absolute; /* Абсолютное позиционирование для наложения */
+  top: 0;
+  left: -12; /* Вернем в исходное положение */
+  width: 123.4%; /* Занимает всю ширину родителя */
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон */
+  backdrop-filter: blur(15px); /* Эффект размытия фона */
+  border-radius: 10px; /* Закругленные углы */
+  z-index: 1; /* Убедитесь, что overlay выше изображения */
+}
+
+.secImg {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  position: absolute; /* Абсолютное позиционирование для наложения на фон */
+  top: 10%; /* Центрируем по вертикали */
+  //   right: 10%; /* Центрируем по горизонтали */
+  //   transform: translate(-50%, -50%); /* Центрируем по обеим осям */
+  z-index: 2; /* Увеличиваем z-index для второго изображения */
+}
+
+.box {
+  width: 400px;
+  border-radius: 5px;
+  padding: 35px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  height: 546px;
+}
+
+.nat {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 5%;
+    text-align: left;
+  }
+}
+.pa {
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Frank Ruhl Libre;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 5%;
+    text-align: left;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center; /* Центрирование иконки по вертикали */
+
+  button {
+    border-radius: 8px;
+    color: rgb(229, 228, 233);
+    font-family: Montserrat;
+    font-size: 25px;
+    border: none;
+    font-weight: 500;
+    line-height: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 10px 35px;
+    margin-left: 170px;
+    display: flex;
+    background: rgb(60, 95, 99);
+  }
+}
+
+.right {
+  justify-content: center;
+  align-items: center;
+}
+.pag {
+  left: 38.5%;
+
+  top: 110%;
+  position: absolute;
+  display: flex;
+  justify-content: center; /* Центрируем пагинацию */
+  margin-top: 20px; /* Отступ сверху для отделения от контента */
+}
