@@ -1,10 +1,12 @@
 import React from "react";
-import Welcome from "../Welcome/Welcome";
+// import Welcome from "../Welcome/Welcome";
+// import SectionHome from "../SectionHome/SectionHome";
 
 const Home = () => {
   return (
     <div>
-      <Welcome />
+      {/* <Welcome /> */}
+      {/* <SectionHome /> */}
     </div>
   );
 };
