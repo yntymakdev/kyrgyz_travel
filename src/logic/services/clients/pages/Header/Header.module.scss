@@ -17,7 +17,7 @@
   display: flex;
   justify-content: center; /* Это разделяет текст и кнопки */
   align-items: center;
-  gap: 90px;
+  gap: 200px;
 
   h1 {
     color: rgb(0, 74, 96);
@@ -34,7 +34,11 @@
   display: flex;
   gap: 50px;
 }
-
+.chevronIcon {
+  margin-left: 5px; /* Отступ слева для иконки, чтобы отделить ее от текста */
+  width: 16px; /* Задайте нужный размер иконки */
+  height: 16px; /* Задайте нужный размер иконки */
+}
 .btn_home {
   justify-content: flex-end;
   display: flex;
@@ -45,12 +49,29 @@
 
 .btn_head {
 }
+
 .header_btn {
-  padding: 8px 32px 8px 32px;
+  outline: none;
+  background-color: transparent;
   box-sizing: border-box;
-  font-size: 17px;
   border: 1px solid rgb(0, 74, 96);
   border-radius: 8px;
+  // padding: 8px 12px 8px 12px;
+  padding: 8px 20px 8px 20px;
+  box-sizing: border-box;
+  font-size: 17px;
+  text-align: center;
+  color: rgb(0, 74, 96);
+  font-family: Frank Ruhl Libre;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  cursor: pointer;
+  text-align: left;
+  border: 1px solid rgb(0, 74, 96);
+  border-radius: 8px;
+  align-items: center;
 }
 
 .header_btn_two {

@@ -1,0 +1,97 @@
+.secImg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: relative;
+  object-fit: cover;
+}
+
+.imageText {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 103px;
+    align-items: center;
+    width: 1290px;
+    margin-top: -55px;
+    font-weight: bold;
+    line-height: 100px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column; /* Иконки располагаются в строку */
+  gap: 10px; /* Пробел между иконками */
+  margin-top: -70px; /* Отступ сверху, если нужно */
+}
+.searchIcon {
+  color: rgb(90, 90, 90);
+  position: absolute; /* Позволяет позиционировать иконку внутри input */
+  left: 225px; /* Отступ от левого края */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(-50%); /* Центрируем иконку */
+  pointer-events: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  gap: 12px;
+  position: relative;
+  button {
+    border: none;
+    width: 55px;
+    height: 56px;
+    border-radius: 60px;
+
+    background: rgb(0, 74, 96);
+  }
+
+  .downo {
+    color: white;
+    width: 40px;
+    height: 40px;
+    // font-size: 200px;
+    // left: 10px;
+    position: absolute;
+    left: 1038px; /* Отступ от левого края */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Центрируем иконку */
+    pointer-events: none;
+  }
+  input {
+    outline: none;
+    border: none;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Inter;
+    font-size: 24px;
+    padding: 14px 10px;
+    padding-left: 60px;
+    width: 63%;
+    background: rgb(229, 228, 233);
+  }
+}
+
+.secInp {
+  p {
+    // width: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 170.02%;
+    letter-spacing: 5%;
+    text-align: center;
+  }
+}
