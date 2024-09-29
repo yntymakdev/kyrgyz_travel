@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Pagination from "@mui/material/Pagination"; // Обратите внимание на импорт Pagination
 
-const ItemList: React.FC = () => {
+const PaginationPage: React.FC = () => {
   const itemsPerPage = 5; // Количество элементов на странице
   const allItems = Array.from(
     { length: 50 },
@@ -44,4 +44,4 @@ const ItemList: React.FC = () => {
   );
 };
 
-export default ItemList;
+export default PaginationPage;

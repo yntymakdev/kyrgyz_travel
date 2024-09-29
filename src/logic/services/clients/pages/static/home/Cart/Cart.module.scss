@@ -1,0 +1,39 @@
+.inpCl {
+  box-sizing: border-box;
+  gap: 15px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  background: rgb(252, 252, 253);
+  input {
+    box-sizing: border-box;
+    outline: none;
+    /* H1 */
+    border: 1px solid rgb(0, 74, 96);
+    border-radius: 10px;
+    padding: 10px 45px;
+
+    background: rgb(252, 252, 253);
+  }
+  button {
+    border: none;
+    padding: 5px 25px;
+    color: rgb(229, 228, 233);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: center;
+    border-radius: 3px;
+
+    /* Dark green */
+    background: rgb(60, 95, 99);
+  }
+}
+
+.imgCard {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
