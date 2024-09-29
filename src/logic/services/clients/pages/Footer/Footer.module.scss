@@ -1,0 +1,52 @@
+.footer {
+  padding-top: 110px;
+}
+.fotImg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.overlayContent {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  //   height: 5  0%;
+}
+
+.fotLike {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+}
+
+.fot p {
+  color: rgb(0, 74, 96);
+  font-family: Frank Ruhl Libre;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0%;
+  //   text-align: left;
+}
+
+.fut {
+  h1 {
+    color: white; // белый цвет для заголовков на фоне изображения
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0%;
+    // text-align: left;
+  }
+  p {
+    color: white; // белый цвет для текста
+    font-family: Frank Ruhl Libre;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+  }
+}
