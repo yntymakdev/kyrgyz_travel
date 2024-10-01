@@ -1,0 +1,28 @@
+.block_detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 50px;
+}
+
+.d_text {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+  }
+
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    // width: 70%;
+    letter-spacing: 5%;
+  }
+}

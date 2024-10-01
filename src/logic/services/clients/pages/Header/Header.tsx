@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Header.module.scss";
-import { ArrowUpRight, ChevronDown, Search } from "lucide-react";
+import { ArrowUpRight, ChevronDown, LinkIcon, Search } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +11,9 @@ const Header = () => {
         <div className="container">
           <div className={s.head_home}>
             <div className={s.head}>
-              <h1>Home</h1>
+              <Link href={"/"}>
+                <h1>Home</h1>
+              </Link>
               <Link href={"/regions"}>
                 <h1>Regions</h1>
               </Link>
