@@ -1,0 +1,147 @@
+.block {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.regions {
+  padding: 70px;
+}
+.para {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+  }
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 5%;
+  }
+}
+
+.carta {
+  align-items: center;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.block_carta {
+  padding-top: 70px;
+}
+
+.text_sec {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+  }
+}
+
+.cont_box {
+  padding-top: 120px;
+}
+.box {
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Frank Ruhl Libre;
+    font-size: 20px;
+    font-weight: 400;
+    width: 384px;
+    line-height: 26px;
+    letter-spacing: 5%;
+  }
+}
+
+.food {
+  padding-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+
+.image_small {
+  padding-top: 10px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.image {
+  margin-top: 55px;
+}
+
+.places {
+  align-items: center;
+  justify-content: center;
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+  }
+}
+
+.headBox {
+  position: relative;
+  border-radius: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(0, 0, 0);
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  height: 367px;
+  width: 340px;
+}
+
+.right {
+  margin-top: -20px;
+  //   width: 80px;
+}
+
+.cir {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+  align-items: center;
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.par {
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0%;
+  }
+  margin-top: -15px;
+}
+
+.card {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}

@@ -3,16 +3,18 @@ import Welcome from "../Welcome/Welcome";
 import SectionHome from "../SectionHome/SectionHome";
 import { Car } from "lucide-react";
 import Cart from "../Cart/Cart";
+import HeroSection from "../HeroSection/HeroSection";
 
 const Home = () => {
   return (
     <div>
+      <HeroSection />
+      <br />/
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <Welcome />
+      <Welcome />/
       <SectionHome />
       <br />
       <br />

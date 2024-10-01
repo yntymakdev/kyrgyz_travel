@@ -1,0 +1,141 @@
+.contai {
+  background-color: rgba(210, 211, 209, 0.8); /* Прозрачный фон */
+  position: absolute;
+  top: 75%; /* Положение от верхней грани */
+  left: 0; /* Растягиваем на всю ширину */
+  right: 0; /* Заполняет всю ширину родителя */
+  height: 260px; /* Увеличенная высота (можно изменить по необходимости) */
+  width: 100%; /* Занимает всю ширину родителя */
+  display: flex;
+  gap: 300px;
+  backdrop-filter: blur(10px); /* Эффект размытия фона */
+  align-items: center; /* Центрируем элементы по вертикали */
+  justify-content: center; /* Центрируем элементы по горизонтали */
+
+  p {
+    color: black;
+    font-family: "Frank Ruhl Libre";
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 5%;
+    text-align: justify; /* Выравнивание текста по ширине */
+    margin: 0; /* Убираем отступы по умолчанию */
+    padding: 10px 20px; /* Добавляем отступы */
+    width: auto; /* Автоматическая ширина для адаптивности */
+    max-width: 650px; /* Максимальная ширина */
+  }
+
+  h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Abril Fatface";
+    font-size: 73px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+    margin-top: -100px;
+    text-align: center;
+  }
+}
+
+.secImg {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  position: relative; /*Убедитесь, что это значение установлено */
+
+  img {
+    width: clmap(450px, 56vw, 1200px);
+  }
+}
+
+.imageText {
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+    align-items: center;
+    width: 1190px;
+    margin-top: -230px;
+    font-weight: bold;
+    line-height: 100px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.icon {
+  display: flex;
+  flex-direction: column; /* Иконки располагаются в строку */
+  gap: 10px; /* Пробел между иконками */
+  margin-top: -280px; /* Отступ сверху, если нужно */
+}
+.searchIcon {
+  color: rgb(90, 90, 90);
+  position: absolute; /* Позволяет позиционировать иконку внутри input */
+  left: 212px; /* Отступ от левого края */
+  top: 50%; /* Центрирование по вертикали */
+  transform: translateY(-50%); /* Центрируем иконку */
+  pointer-events: none;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  margin-top: -30px;
+  gap: 12px;
+  position: relative;
+  button {
+    border: none;
+    width: 55px;
+    height: 56px;
+    border-radius: 60px;
+
+    background: rgb(0, 74, 96);
+  }
+
+  .downo {
+    color: white;
+    width: 40px;
+    height: 40px;
+    // font-size: 200px;
+    // left: 10px;
+    position: absolute;
+    left: 950px; /* Отступ от левого края */
+    top: 50%; /* Центрирование по вертикали */
+    transform: translateY(-50%); /* Центрируем иконку */
+    pointer-events: none;
+  }
+  input {
+    outline: none;
+    border: none;
+    align-items: center;
+    border-radius: 30px;
+    font-family: Inter;
+    font-size: 24px;
+    padding: 14px 10px;
+    padding-left: 60px;
+    width: 62%;
+    // margin-top: -50px;
+    background: rgb(229, 228, 233);
+  }
+}
+
+.secInp {
+  p {
+    color: rgb(255, 255, 255);
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 190.02%;
+    letter-spacing: 5%;
+    text-align: center;
+  }
+}
