@@ -109,7 +109,7 @@ const Welcome = () => {
                   <div className={s.pa}>
                     <p>
                       The Burana Tower is located in the Chuy region in northern
-                      Kyrgyzstan, about 80 km (50 miles) east of the capital
+                      Kyrgyzstan , about 80 km (50 miles) east of the capital
                       Bishkek near the city Tokmok. This impressive ancient
                       minaret still survives today as one of the key historical
                       sites in Kyrgyzstan.{" "}
