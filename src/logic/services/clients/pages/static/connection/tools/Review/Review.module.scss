@@ -21,10 +21,7 @@
   height: 13.94px;
   border-radius: 10px;
   box-sizing: border-box;
-  /* Dark green */
   background: rgb(60, 95, 99);
-  /* BG light grey */
-  // background: rgb(229, 228, 233);
 }
 
 .text_op {
@@ -187,18 +184,6 @@
   }
 }
 
-.inp {
-  align-items: center;
-  display: flex;
-  input {
-    outline: none;
-    border: none;
-    border-radius: 31px;
-    padding: 8px 90px;
-    background: rgb(229, 228, 233);
-  }
-}
-
 .boxo {
   display: flex;
 }
@@ -206,4 +191,37 @@
 .review_btn {
   justify-content: space-between;
   display: flex;
+}
+.inp {
+  // align-items: center;
+  display: flex;
+  gap: 440px;
+  position: relative;
+  padding-top: 105px;
+
+  input {
+    outline: none;
+    border: none;
+    padding-left: 40px;
+    width: 401px;
+    height: 35px;
+    border-radius: 20px;
+    // border-radius: 31px;q
+    background: rgb(229, 228, 233);
+    &::placeholder {
+      padding-left: 1px;
+    }
+  }
+}
+
+.searchIcon {
+  color: rgb(90, 90, 90);
+  position: absolute;
+  right: 900px; /* Отступ от правого края input */
+  top: 35%; /* Вертикальное центрирование относительно родителя */
+  transform: translateY(-50%); /* Центрируем по вертикали */
+}
+
+.input {
+  padding-left: 40px; /* Увеличиваем отступ, чтобы текст не пересекался с иконкой */
 }
