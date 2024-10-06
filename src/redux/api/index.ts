@@ -29,6 +29,6 @@ export const api = createApi({
   baseQuery: baseQueryExtended,
   refetchOnReconnect: true,
   refetchOnFocus: false,
-  tagTypes: ["attractions", "games"],
+  tagTypes: ["attractions", "games", "culture"],
   endpoints: () => ({}),
 });

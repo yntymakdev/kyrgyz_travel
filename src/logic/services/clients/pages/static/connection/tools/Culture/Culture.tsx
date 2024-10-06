@@ -28,15 +28,15 @@ const Culture = () => {
               <br />
               <div className={s.block_text}>
                 <div className={s.block_icon}>
+                  <p>Games</p>
                   <Link href={"/culture/game"}>
-                    <p>Games</p>
+                    <MoveRight className={s.right} />
                   </Link>
-                  <MoveRight className={s.right} />
                 </div>
                 <div className={s.block_icon}>
-                  {/* <Link href={"/culture/national"}> */}
-                  <p>National clothes</p>
-                  {/* </Link> */}
+                  <Link href={"/culture/national"}>
+                    <p>National clothes</p>
+                  </Link>
                   <MoveRight className={s.right} />
                 </div>
                 <div className={s.block_icon}>

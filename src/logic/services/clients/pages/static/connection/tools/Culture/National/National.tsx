@@ -16,14 +16,14 @@ const National = () => {
           <div className={s.game_hero}>
             <div className={s.game_text}>
               <div className={s.games}>
-                <h1>Games</h1>
+                <h1>National clothes</h1>
               </div>
               <div className={s.since}>
                 <p>
-                  Since ancient times, the Kyrgyz have given a great place to
-                  folk games and <br /> entertainment, not a single folk
-                  festival took place without them. <br /> Traditional
-                  equestrian games remain the most beloved and revered.
+                  The nomadic way of life is reflected in the Kyrgyz clothes,
+                  the features of various regions are visible. Natural materials
+                  prevail: wool, felt, leather, coarse fabrics. The design uses
+                  ornaments and themes inspired by nature and tribal traditions.
                 </p>
               </div>
             </div>

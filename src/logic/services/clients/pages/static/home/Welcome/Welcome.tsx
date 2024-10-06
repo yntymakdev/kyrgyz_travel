@@ -60,7 +60,7 @@ const Welcome = () => {
             <div className={s.carta}>
               {data?.map((attraction, index) => (
                 <div key={index} className={s.headBox}>
-                  {attraction.attraction_photos.length > 0 && (
+                  {attraction.attraction_photos?.length > 0 && ( // Используем опциональную цепочку
                     <Image
                       className={s.image_place}
                       src={attraction.attraction_photos[0].image} // Предполагаем, что это URL
