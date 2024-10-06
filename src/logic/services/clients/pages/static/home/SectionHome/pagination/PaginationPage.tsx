@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from "react";
-import Pagination from "@mui/material/Pagination"; // Обратите внимание на импорт Pagination
+import Pagination from "@mui/material/Pagination";
 
 const PaginationPage: React.FC = () => {
-  const itemsPerPage = 5; // Количество элементов на странице
+  const itemsPerPage = 5;
   const allItems = Array.from(
     { length: 50 },
     (_, index) => `Item ${index + 1}`
-  ); // Генерация массива данных
+  );
 
-  const totalPages = Math.ceil(allItems.length / itemsPerPage); // Общее количество страниц
+  const totalPages = Math.ceil(allItems.length / itemsPerPage);
 
-  const [currentPage, setCurrentPage] = useState<number>(1); // Текущая страница
-  const [currentItems, setCurrentItems] = useState<string[]>([]); // Элементы для текущей страницы
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const [currentItems, setCurrentItems] = useState<string[]>([]);
 
-  // Обновление текущих элементов при изменении страницы
   useEffect(() => {
     const startIndex = (currentPage - 1) * itemsPerPage;
     const newItems = allItems.slice(startIndex, startIndex + itemsPerPage);
     setCurrentItems(newItems);
   }, [currentPage, allItems]);
 
-  // Функция для обработки изменения страницы
   const handlePageChange = (
     event: React.ChangeEvent<unknown>,
     page: number

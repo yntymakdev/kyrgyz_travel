@@ -44,6 +44,7 @@
   display: flex;
   text-align: center;
   flex-direction: column;
+  z-index: -1;
   position: relative; /*Убедитесь, что это значение установлено */
 
   img {

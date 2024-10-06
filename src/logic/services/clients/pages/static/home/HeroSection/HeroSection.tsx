@@ -12,7 +12,6 @@ const HeroSection = () => {
     <div>
       <div className={s.secImg}>
         <Image src={secImg} alt="img" quality={70} width={1579} height={1034} />
-
         <div className={s.imageText}>
           <div className={s.box}>
             <div className={s.secInp}>

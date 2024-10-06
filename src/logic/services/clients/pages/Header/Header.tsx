@@ -1,10 +1,12 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import s from "./Header.module.scss";
 import { ArrowUpRight, ChevronDown, LinkIcon, Search } from "lucide-react";
 
 import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
+  const [showDropdown, setShowDropdown] = useState(false);
   return (
     <div>
       <div className={s.header}>
@@ -17,7 +19,25 @@ const Header = () => {
               <Link href={"/regions"}>
                 <h1>Regions</h1>
               </Link>
-              <h1>Gallery</h1>
+              <div
+                className={s.gallery}
+                onMouseEnter={() => setShowDropdown(true)}
+                onMouseLeave={() => setShowDropdown(false)}
+              >
+                <Link href={"/culture"}>
+                  <h1>Culture</h1>
+                </Link>
+                {showDropdown && (
+                  <div className={s.dropdown}>
+                    <p>Games</p>
+                    <p>National clothes</p>
+                    <p>Hand crafts</p>
+                    <p>Currency</p>
+                    <p>National instruments</p>
+                    <p>Kitchen</p>
+                  </div>
+                )}
+              </div>
               <h1>Routes</h1>
               <h1>Culture</h1>
             </div>

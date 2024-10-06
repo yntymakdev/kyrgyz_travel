@@ -2,14 +2,17 @@ import { api as index } from "..";
 
 const api = index.injectEndpoints({
   endpoints: (build) => ({
-    getPosts: build.query<POSTS.GetPostResponce, POSTS.GetPostsRequest>({
+    getPosts_attractions: build.query<
+      POSTS.GetPostResponse,
+      POSTS.GetPostsRequest
+    >({
       query: () => ({
-        url: "",
-        method: "",
+        url: "/attractions",
+        method: "GET",
       }),
-      providesTags: ["posts"],
+      providesTags: ["attractions"],
     }),
   }),
 });
 
-export const {} = api;
+export const { useGetPosts_attractionsQuery } = api;
