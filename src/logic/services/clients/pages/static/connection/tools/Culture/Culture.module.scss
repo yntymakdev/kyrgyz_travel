@@ -1,0 +1,80 @@
+.cul {
+  background: url("./image/image 976.png") no-repeat center center;
+  background-size: cover; /* Изображение занимает весь элемент */
+  width: 100%; /* Установите ширину на 100% */
+  max-width: 110%; /* Максимальная ширина может быть 110% */
+  margin-left: auto; /* Установите авто отступы для центрирования */
+  margin-right: auto; /* Установите авто отступы для центрирования */
+  height: 740px; /* Высота элемента */
+  display: flex;
+  z-index: -1;
+  align-items: center;
+  position: relative;
+}
+
+.cul_box {
+  position: absolute; /* Абсолютное позиционирование для наложения на изображение */
+  top: 17%; /* Укажите отступ сверху */
+  left: 19%; /* Центрируем по горизонтали */
+  transform: translateX(
+    -50%
+  ); /* Смещение влево на половину ширины элемента для центрирования */
+  width: 395px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+  background: rgb(255, 255, 255);
+  padding: 20px; /* Отступ внутри блока для лучшего восприятия */
+}
+.box_text {
+  padding-top: 10px;
+}
+
+.cul_box {
+  padding: 0 80px; /* добавьте отступы, чтобы текст не прилипал к краям */
+
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Frank Ruhl Libre;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.block_text {
+  padding: 0 0 30px;
+  p {
+    padding-top: 5px;
+    color: rgb(0, 74, 96);
+
+    font-family: Frank Ruhl Libre;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.right {
+  width: 22px;
+  height: 14px;
+  color: rgb(0, 74, 96);
+}
+
+.block_icon {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}

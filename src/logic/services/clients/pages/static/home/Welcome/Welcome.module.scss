@@ -116,11 +116,11 @@
     color: rgb(36, 36, 36);
     font-family: Montserrat;
     font-size: 15px;
-    width: auto;
+    width: 302px;
     font-weight: 400;
     line-height: 17px;
     letter-spacing: 0%;
-    text-align: justify; /* Выровнять текст по ширине */
+    // text-align: justify; /* Выровнять текст по ширине */
   }
 }
 
@@ -164,13 +164,16 @@
 }
 
 .cu {
-  p {
+  h1 {
     color: rgb(0, 74, 96);
     font-family: Abril Fatface;
     font-size: 64px;
     font-weight: 400;
     line-height: 86px;
     letter-spacing: 0%;
-    text-align: center;
   }
+}
+
+.image_place {
+  border-radius: 8px;
 }

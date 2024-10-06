@@ -9,6 +9,7 @@ import DirectionsBusFilledOutlinedIcon from "@mui/icons-material/DirectionsBusFi
 import DirectionsRailwayFilledOutlinedIcon from "@mui/icons-material/DirectionsRailwayFilledOutlined";
 import FlightTakeoffOutlinedIcon from "@mui/icons-material/FlightTakeoffOutlined";
 import ReviewPage from "../Review/ReviewPage";
+import vector_place from "./img/Vector (3).png";
 const RegionsDetail = () => {
   return (
     <div>
@@ -39,6 +40,14 @@ const RegionsDetail = () => {
           <div className={s.hero_sec}>
             <div className={s.btn}>
               <button className={s.button}> Places</button>{" "}
+              {/* <Image
+                className={s.vector_place}
+                src={vector_place}
+                alt="img"
+                quality={100}
+                width={20}
+                height={21}
+              /> */}
               <button className={s.bt}> Hotels</button>{" "}
               <button className={s.bt}> kitchen</button>{" "}
               <button className={s.bt}> Event</button>{" "}
