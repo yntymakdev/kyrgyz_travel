@@ -7,6 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  const [showDrop, setShowDrop] = useState(false);
   return (
     <div>
       <div className={s.header}>
@@ -16,9 +17,40 @@ const Header = () => {
               <Link href={"/"}>
                 <h1>Home</h1>
               </Link>
-              <Link href={"/regions"}>
-                <h1>Regions</h1>
-              </Link>
+              <div
+                className={s.gall}
+                onMouseEnter={() => setShowDrop(true)}
+                onMouseLeave={() => setShowDrop(false)}
+              >
+                <Link href={"/regions"}>
+                  <h1>Region</h1>
+                </Link>
+                {showDrop && (
+                  <div className={s.drop}>
+                    <Link href={"/regions/batken"}>
+                      <p>Batken</p>
+                    </Link>
+                    <Link href={"/regions/jalalabad"}>
+                      <p>Jalal-Abad</p>
+                    </Link>
+                    <Link href={"/regions/issykol"}>
+                      <p>Issyk_kul</p>
+                    </Link>
+                    <Link href={"/regions/naryn"}>
+                      <p>Naryn</p>
+                    </Link>
+                    <Link href={"/regions/osh"}>
+                      <p>Osh</p>
+                    </Link>
+                    <Link href={"/regions/talas"}>
+                      <p>Talas</p>
+                    </Link>
+                    <Link href={"/regions/chuy"}>
+                      <p>Chuy</p>
+                    </Link>
+                  </div>
+                )}
+              </div>
               <div
                 className={s.gallery}
                 onMouseEnter={() => setShowDropdown(true)}

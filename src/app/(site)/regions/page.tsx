@@ -5,8 +5,7 @@ import React from "react";
 const page = () => {
   return (
     <>
-      <RegionsDetail />
-      {/* <Regions />; */}
+      <Regions />;{/* <RegionsDetail /> */}
     </>
   );
 };

@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import s from "./Regions.module.scss";
 import Image from "next/image";
 import img from "./img/Rectangle 142.png";
@@ -15,8 +16,26 @@ import imageFood_two from "./image/image 958.png";
 import { MoveRight } from "lucide-react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import sa from "../../../home/Welcome/Welcome.module.scss";
+import { useGetPost_regionQuery } from "@/redux/api/region";
+import { useGetPost_regionFoodQuery } from "@/redux/api/region_food";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 const Regions = () => {
+  const {
+    data: regionData,
+    isLoading: isRegionLoading,
+    isError: isRegionError,
+  } = useGetPost_regionQuery();
+
+  const {
+    data: foodData,
+    isLoading: isFoodLoading,
+    isError: isFoodError,
+  } = useGetPost_regionFoodQuery();
+  console.log(foodData);
+  console.log(regionData);
+
   return (
     <div>
       <div className={s.regions}>
@@ -24,7 +43,7 @@ const Regions = () => {
           <div className={s.block}>
             <div className={s.img}>
               <Image
-                src={img} // Фоновое изображение, которое остается неизменным
+                src={img}
                 alt="Background Image"
                 quality={70}
                 width={590}

@@ -18,7 +18,7 @@ const RegionsDetail = () => {
           <div className={s.block_detail}>
             <div className={s.img}>
               <Image
-                src={img} // Фоновое изображение, которое остается неизменным
+                src={img} // Фоновое изображение, ко2торое остается неизменным
                 alt="Background Image"
                 quality={70}
                 width={590}
