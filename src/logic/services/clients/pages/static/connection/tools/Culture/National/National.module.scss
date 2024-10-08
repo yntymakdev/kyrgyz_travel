@@ -1,0 +1,70 @@
+.game {
+  padding: 20px;
+}
+.game_hero {
+  z-index: -1;
+  background: url("./image/Rectangle 19400.png") no-repeat center center;
+  background-size: cover; /* Изображение занимает весь элемент */
+  width: 110%; /* Ширина на 110% */
+  position: relative; /* Позиционирование для дочерних элементов */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translateX(-50%); /* Смещение влево на 50% для центрирования */
+  height: 250px; /* Высота элемента */
+  display: flex; /* Flexbox для выравнивания контента */
+  align-items: center; /* Вертикальное выравнивание содержимого */
+}
+
+.game_text {
+  padding: 50px;
+  gap: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 86px;
+    letter-spacing: 0%;
+  }
+  p {
+    color: rgb(0, 0, 0);
+
+    font-family: Frank Ruhl Libre;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0%;
+  }
+}
+
+.game_public {
+  margin-left: -65px;
+}
+
+.seni {
+  gap: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.game_nati {
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+  }
+  p {
+    width: 500px;
+    color: rgb(36, 36, 36);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0%;
+  }
+}

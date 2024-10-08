@@ -11,8 +11,14 @@ const HeroSection = () => {
   return (
     <div>
       <div className={s.secImg}>
-        <Image src={secImg} alt="img" quality={70} width={1579} height={1034} />
-
+        <Image
+          className={s.secImgAdap}
+          src={secImg}
+          alt="img"
+          quality={70}
+          width={1579}
+          height={1034}
+        />
         <div className={s.imageText}>
           <div className={s.box}>
             <div className={s.secInp}>

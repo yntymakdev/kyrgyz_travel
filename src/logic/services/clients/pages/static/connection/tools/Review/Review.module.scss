@@ -1,0 +1,373 @@
+.text {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Abril Fatface;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+}
+
+.btn {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+.bt {
+  border-radius: 6px;
+  border: 1.4px solid rgb(36, 36, 36);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+  line-height: 24px;
+  padding: 3px 30px 3px 30px;
+
+  letter-spacing: 0%;
+}
+.circleFull_one {
+  width: 104px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+.text_op {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  h1 {
+    color: rgb(90, 90, 90);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.block_op {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  //   gap: 6px;
+}
+
+.circleFull_two {
+  width: 84px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+.circleFull_three {
+  width: 44px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+.circleFull_four {
+  width: 24px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+.circleFull_five {
+  width: 14px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+
+.text_op_two {
+  display: flex;
+  gap: 70px;
+  align-items: center;
+  h1 {
+    color: rgb(90, 90, 90);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+.text_op_three {
+  display: flex;
+  gap: 45px;
+  align-items: center;
+  h1 {
+    color: rgb(90, 90, 90);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+.text_op_four {
+  display: flex;
+  gap: 89px;
+  align-items: center;
+  h1 {
+    color: rgb(90, 90, 90);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.text_op_five {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  h1 {
+    color: rgb(90, 90, 90);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.boxo {
+  // display: flex;
+}
+
+.review_btn {
+  justify-content: space-between;
+  display: flex;
+}
+.blp {
+  display: flex;
+  justify-content: space-between;
+}
+.inp {
+  // align-items: center;
+  // d  isplay: flex;
+  // gap: 300px;
+  // gap: 440px;
+  // position: relative;
+  // padding-top: 105px;
+
+  input {
+    outline: none;
+    border: none;
+    padding-left: 40px;
+    width: 401px;
+    height: 35px;
+    border-radius: 20px;
+    // border-radius: 31px;q
+    background: rgb(229, 228, 233);
+    &::placeholder {
+      padding-left: 1px;
+    }
+  }
+}
+
+.input {
+  // padding-left: 40px; /* Увеличиваем отступ, чтобы текст не пересекался с иконкой */
+}
+
+.review_te {
+  h1 {
+    color: rgb(0, 0, 0);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.paragr {
+  padding-top: 5px;
+  p {
+    color: rgb(90, 90, 90);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.like {
+  display: flex;
+  align-items: center;
+}
+
+.ann {
+  gap: 12px;
+  align-items: center;
+  display: flex;
+}
+
+.review_profile {
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.revew {
+  gap: 100px;
+  display: flex;
+}
+
+.zan {
+  padding-top: 20px;
+}
+
+.cirLike {
+  align-items: center;
+  gap: 2.5px;
+  display: flex;
+}
+
+.cir {
+  display: flex;
+  gap: 10px;
+  padding-top: 13px;
+  align-items: center;
+}
+
+.circleFull {
+  width: 13.88px; /* Увеличьте ширину для полного круга */
+  height: 13.94px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  /* Dark green */
+  background: rgb(60, 95, 99);
+  /* BG light grey */
+  // background: rgb(229, 228, 233);
+}
+.circle {
+  width: 13.88px; /* Увеличьте ширину для полного круга */
+  height: 13.94px; /* Увеличьте высоту для полного круга */
+  border-radius: 50%; /* Сделаем его полностью круглым */
+  box-sizing: border-box;
+  border: 3px solid rgb(60, 95, 99);
+  background: linear-gradient(
+    to right,
+    rgb(60, 95, 99) 50%,
+    rgb(229, 228, 233) 50%
+  );
+}
+
+.comment {
+  padding-top: 23px;
+  p {
+    width: 800px;
+    color: rgb(36, 36, 36);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  h1 {
+    color: rgb(36, 36, 36);
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%;
+    letter-spacing: 0%;
+  }
+}
+
+.filter {
+  margin-left: 50px;
+}
+
+.ik {
+  position: relative;
+}
+
+.searchIcon {
+  color: rgb(90, 90, 90);
+  position: absolute;
+  top: 10%;
+  right: 91%; /* Отступ от правого края input */
+  // top: 90%; /* Вертикальное центрирование относительно родителя */
+  // transform: translateY(-50%); /* Центрируем по вертикали */
+}
+
+.li {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}

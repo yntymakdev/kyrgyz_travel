@@ -2,18 +2,18 @@
 import React, { useState } from "react";
 import s from "./SectionHome.module.scss";
 import secImg from "./img/image 954.png"; // Фоновое изображение
-import sec from "./img/image 950.png"; // Изображение для первой страницы
-import cul from "./img/image 949.png"; // Изображение для второй страницы
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import { Pagination } from "@mui/material";
+import { useGetPosts_cultureQuery } from "@/redux/api/culture";
 
 const SectionHome = () => {
-  const [currentPage, setCurrentPage] = useState<number>(1);
-  const totalPages = 2; // Общее количество страниц
-  const itemsPerPage = 2;
+  const { data = [], isError, isLoading } = useGetPosts_cultureQuery();
+  console.log(data);
 
-  const items = Array.from({ length: 4 }, (_, index) => `Item ${index + 1}`); // Измените на ваши данные
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const itemsPerPage = 1; // Изменено на 1 элемент на странице
+  const totalPages = Math.ceil(data.length / itemsPerPage); // Общее количество страниц
 
   const handlePageChange = (
     event: React.ChangeEvent<unknown>,
@@ -23,8 +23,7 @@ const SectionHome = () => {
     console.log("Current Page:", page);
   };
 
-  // Расчет текущих элементов для отображения на странице
-  const currentItems = items.slice(
+  const currentItem = data.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
@@ -36,6 +35,7 @@ const SectionHome = () => {
           <div className={s.section}>
             <div className={s.secText}>
               <Image
+                className={s.secImgAd}
                 src={secImg} // Фоновое изображение, которое остается неизменным
                 alt="Background Image"
                 quality={70}
@@ -46,50 +46,28 @@ const SectionHome = () => {
 
               <div className={s.secImg}>
                 <div className={s.border}>
-                  {/* Условный рендеринг для изменения изображения в зависимости от страницы */}
-                  <Image
-                    src={currentPage === 1 ? sec : cul} // Меняем изображение по номеру страницы
-                    alt="Foreground Image"
-                    quality={70}
-                    width={805}
-                    height={546}
-                  />
+                  {/* Динамическое изображение на основе данных */}
+                  {currentItem.length > 0 && (
+                    <Image
+                      src={currentItem[0].image} // Изображение из текущего элемента
+                      alt={currentItem[0].culture_name}
+                      quality={70}
+                      width={805}
+                      height={546}
+                    />
+                  )}
                 </div>
 
                 <div className={s.box}>
                   <div className={s.nat}>
-                    <h1>National Kyrgyz Musical Instruments</h1>
+                    <h1>{currentItem[0]?.culture_name}</h1>
                   </div>
                   <br />
                   <br />
 
-                  {/* Условный рендеринг контента на основе текущей страницы */}
-                  {currentPage === 1 && (
-                    <div className={s.pa}>
-                      <p>
-                        The Kyrgyz began to use felt for the manufacture of
-                        carpets and other household items in antiquity...
-                      </p>
-                      {currentItems.map((item, index) => (
-                        <div key={index} className={s.item}>
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                  {currentPage === 2 && (
-                    <div className={s.pa}>
-                      <p>
-                        This is the second page content. Here you can add more
-                        information or different content...
-                      </p>
-                      {currentItems.map((item, index) => (
-                        <div key={index} className={s.item}>
-                          {item}
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <div className={s.pa}>
+                    <p>{currentItem[0]?.description}</p>
+                  </div>
                   <div className={s.btn}>
                     <button>
                       More <MoveRight className={s.right} />

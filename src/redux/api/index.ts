@@ -4,7 +4,7 @@ import {
   fetchBaseQuery,
 } from "@reduxjs/toolkit/query/react";
 const baseQuery = fetchBaseQuery({
-  baseUrl: `${process.env.NEXT_PUBLIC_API_URL}`,
+  baseUrl: `${process.env.NEXT_PUBLIC_SWAGGER_API_URL}`,
   // prepareHeaders: (headers) => {
   // 	let token = null;
   // 	const localStorageData = JSON.parse(localStorage.getItem('tokens')!);
@@ -29,6 +29,6 @@ export const api = createApi({
   baseQuery: baseQueryExtended,
   refetchOnReconnect: true,
   refetchOnFocus: false,
-  tagTypes: ["posts"],
+  tagTypes: ["attractions", "games", "culture", "region", "region_food"],
   endpoints: () => ({}),
 });
