@@ -90,72 +90,61 @@
   letter-spacing: 0%;
   border-radius: 8px;
   flex-direction: row;
-  padding: 8px 22px 8px 22px;
+  padding: 11px 22px 11px 22px;
   background: rgb(0, 74, 96);
 }
 .gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Центрируем элемент .gallery */
+  position: relative; /* Для корректного позиционирования вложенных элементов */
   cursor: pointer;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // position: relative;
+}
 
-  h1 {
-    &:hover {
-      color: white;
-    }
-  }
+.gallery h1 {
+  margin: 0;
+}
 
-  .dropdown {
-    position: absolute;
-    // top: 100%;
-    // width: 177px;
-    // height: 181px;
-
-    // justify-content: center;
-    // align-items: center;
-    left: 31.8%;
-    background-color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    // padding: 1rem;
-    // opacity: 0; /* Элемент полностью невидим */
-    // visibility: hidden; /* Скрываем элемент, чтобы он не влиял на разметку */
-    // transition: opacity 1.5s ease, visibility 0s 1.5s; /* Переход для прозрачности и видимости */
-    // flex-direction: column;
-    // gap: 0.5rem;
-
-    p {
-      margin: 0;
-      cursor: pointer;
-
-      &:hover {
-        color: #007bff;
-      }
-    }
-  }
-
-  &:hover .dropdown {
-    opacity: 1; /* Элемент становится видимым */
-    visibility: visible; /* Снимаем скрытие, чтобы элемент отображался */
-    transition: opacity 1.5s ease, visibility 0s 0s; /* Убираем задержку для видимости */
-  }
+.gallery h1:hover {
+  color: white;
 }
 
 .dropdown {
+  position: absolute;
+  top: 100%; /* Элемент будет находиться под заголовком */
+  left: 50%; /* Начальная позиция в середине */
+  transform: translateX(-50%); /* Центрируем по горизонтали */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  opacity: 0; /* По умолчанию скрыт */
+  visibility: hidden; /* Не влияет на разметку */
+  transition: opacity 1.5s ease, visibility 0s 1.5s;
+  display: flex;
   flex-direction: column;
-  align-items: center;
-  // display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  p {
-    text-align: left;
-    color: rgb(0, 74, 96);
-    font-family: Frank Ruhl Libre;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 18px;
-    letter-spacing: 0%;
-  }
+  gap: 0.5rem;
+}
+
+.dropdown p {
+  margin: 0;
+  cursor: pointer;
+  text-align: left;
+  color: rgb(0, 74, 96);
+  font-family: Frank Ruhl Libre;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0%;
+}
+
+.dropdown p:hover {
+  color: #007bff;
+}
+
+.gallery:hover .dropdown {
+  opacity: 1; /* Элемент становится видимым при наведении */
+  visibility: visible; /* Снимаем скрытие */
+  transition: opacity 1.5s ease, visibility 0s 0s;
 }
 
 .gall {

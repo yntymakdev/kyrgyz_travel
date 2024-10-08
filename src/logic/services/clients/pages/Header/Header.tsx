@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import s from "./Header.module.scss";
 import { ArrowUpRight, ChevronDown, LinkIcon, Search } from "lucide-react";
-
+import user from "./image/Vector (5).png";
 import Image from "next/image";
 import Link from "next/link";
 const Header = () => {
@@ -79,7 +79,19 @@ const Header = () => {
                 <option>Рус</option>
                 <option>Кыр</option>
               </select>
-              <button className={s.header_btn_two}>Sign Up</button>
+              <Link href={"/auth/user"}>
+                <Image
+                  className={s.image_user}
+                  src={user}
+                  alt="image"
+                  width={35}
+                  height={35}
+                  quality={70}
+                />
+              </Link>
+              {/* <Link href={"/auth/sign-up"}>
+                <button className={s.header_btn_two}>Sign Up</button>
+              </Link> */}
             </div>
           </div>
         </div>
