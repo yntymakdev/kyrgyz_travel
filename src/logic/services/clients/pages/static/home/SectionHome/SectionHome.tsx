@@ -35,6 +35,7 @@ const SectionHome = () => {
           <div className={s.section}>
             <div className={s.secText}>
               <Image
+                className={s.secImgAd}
                 src={secImg} // Фоновое изображение, которое остается неизменным
                 alt="Background Image"
                 quality={70}
