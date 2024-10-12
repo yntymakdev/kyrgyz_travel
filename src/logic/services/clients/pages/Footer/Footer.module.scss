@@ -1,9 +1,15 @@
 // .footer {
 //   padding-top: 110px;
 // }
-@media (max-width: 1278px) {
+@media (max-width: 1280px) {
   .fotoImg {
     width: 10px;
+    height: 10px;
+  }
+}
+@media (max-width: 1024px) {
+  .fotoImg {
+    width: 40px;
     height: 10px;
   }
 }
@@ -11,7 +17,7 @@
 .fotImg {
   background: url("./img/Rectangle\ 18.png") no-repeat center center;
   // position: relative;;
-  background-size: cover;
+  background-size: contain;
   width: 1228.5px;
   height: 333px;
   margin-left: -150px;
