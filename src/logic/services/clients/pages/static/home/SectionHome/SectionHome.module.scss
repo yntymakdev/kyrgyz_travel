@@ -1,6 +1,26 @@
-@media (max-width: 1280px) {
+@media (max-width: 1281px) {
   .secImgAd {
-    width: 200px;
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .secImgAd {
+    width: 130%;
+  }
+}
+@media (max-width: 800) {
+  .secImgAd {
+    width: 80%;
+  }
+}
+@media (max-width: 400) {
+  .secImgAd {
+    width: 140%;
+  }
+}
+@media (max-width: 322) {
+  .secImgAd {
+    width: 140%;
   }
 }
 .secText {
@@ -13,7 +33,7 @@
 }
 
 .overlay {
-  position: absolute; /* Абсолютное позиционирование для наложения */
+  // position: absolute; /* Абсолютное позиционирование для наложения */
   top: 0;
   left: -12; /* Вернем в исходное положение */
   width: 123.4%; /* Занимает всю ширину родителя */

@@ -17,11 +17,7 @@ const Header = () => {
               <Link href={"/"}>
                 <h1>Home</h1>
               </Link>
-              <div
-                className={s.gall}
-                onMouseEnter={() => setShowDrop(true)}
-                onMouseLeave={() => setShowDrop(false)}
-              >
+              <div className={s.gall} onMouseEnter={() => setShowDrop(true)} onMouseLeave={() => setShowDrop(false)}>
                 <Link href={"/regions"}>
                   <h1>Region</h1>
                 </Link>
@@ -80,18 +76,11 @@ const Header = () => {
                 <option>Кыр</option>
               </select>
               <Link href={"/auth/user"}>
-                <Image
-                  className={s.image_user}
-                  src={user}
-                  alt="image"
-                  width={35}
-                  height={35}
-                  quality={70}
-                />
+                <Image className={s.image_user} src={user} alt="image" width={35} height={35} quality={70} />
               </Link>
               {/* <Link href={"/auth/sign-up"}>
-                <button className={s.header_btn_two}>Sign Up</button>
-              </Link> */}
+                  <button className={s.header_btn_two}>Sign Up</button>
+                </Link> */}
             </div>
           </div>
         </div>

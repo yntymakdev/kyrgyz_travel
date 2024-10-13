@@ -1,6 +1,436 @@
 .bacImage {
-  background: url("./image/imagebac.png") no-repeat center center;
+  background: url("./image/imagebac.png") no-repeat center center !important;
   background-size: cover;
+  width: 264px;
+  height: 735px;
+}
+
+.user_text {
+  p {
+    color: rgb(255, 252, 252);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+    transition: color 0.3s ease; /* плавный переход для текста */
+  }
+}
+
+.card {
+  padding: 50px;
+  padding-top: 150px;
+}
+
+.user_card {
+  gap: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user_icon {
+  color: white;
+  //   padding-top: 10px;
+}
+
+.user_card:hover {
+  background-color: white; /* Фон при наведении */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Добавляем легкую тень */
+}
+
+.user_card:hover .user_icon {
+  color: #007bff; /* Иконка становится синей */
+}
+
+.user_card:hover .user_text p {
+  color: #007bff; /* Текст становится синим */
+}
+
+.log svg {
+  color: white;
+}
+
+.log {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  p {
+    color: rgb(255, 252, 252);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+  }
+}
+
+.user {
+  display: flex;
+}
+
+.input {
+  padding: 40px;
+  position: relative;
+  input {
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    width: 500px;
+    padding: 10px 35px;
+    background: rgb(229, 228, 233);
+  }
+}
+.search svg {
+  color: rgb(90, 90, 90);
+  width: 20.31px;
+  height: 20.31px;
+  top: 47px;
+  left: 9%;
+  position: absolute;
+}
+
+.boot {
+  border-radius: 60px;
+  margin-left: -30px;
+  background: rgb(0, 74, 96);
+  width: 33.96px;
+  height: 34px;
+}
+.head_inp {
+  display: flex;
+
+  align-items: center;
+}
+
+.strelka svg {
+  color: white;
+  margin-left: 1px;
+  width: 32.54px;
+  margin-top: -26px;
+  height: 88px;
+}
+
+.profile {
+  display: flex;
+  gap: 10px;
+  padding-left: 30%;
+  align-items: center;
+}
+
+.do {
+  color: rgb(0, 74, 96);
+  font-family: Abril Fatface;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0%;
+
+  //
+}
+.ros {
+  color: rgb(0, 74, 96);
+  font-family: Montserrat;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.pri {
+  p {
+    width: 110px;
+  }
+}
+
+.box {
+  margin-left: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  margin-top: 5px;
+  width: 955px;
+  height: 253px;
+  border-radius: 10px;
+  background-color: #004a60;
+}
+
+.image {
+  margin-top: -55px;
+  position: relative;
+}
+
+.image_p {
+  position: relative;
+  left: 20.5%;
+  position: absolute;
+}
+
+.photo svg {
+  left: 26%;
+  top: 45%;
+  color: white;
+  position: absolute;
+}
+
+.prid {
+  top: 42%;
+  left: 30%;
+  position: absolute;
+}
+.dod {
+  color: rgb(253, 255, 255);
+  font-family: Abril Fatface;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.rod {
+  color: rgb(255, 252, 252);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+
+.edit svg {
+  left: 76%;
+  top: 45%;
+  position: absolute;
+  color: white;
+}
+
+.block_sign {
+  width: 636px;
+  height: 651px;
+  margin-left: 100px;
+  border-radius: 8px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+}
+
+.input_signUp {
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  input {
+    background-color: #f7f7f7;
+    gap: 10px;
+    width: 500px;
+    outline: none;
+    border: 1px solid rgba(39, 49, 56, 0.51);
+    border-radius: 10px;
+
+    padding: 13px 20px 13px;
+  }
+  input::placeholder {
+    color: rgba(39, 49, 56, 0.51);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+  }
+}
+
+.welIn {
+  gap: 20px;
+  display: flex;
+}
+
+.welOt {
+  display: flex;
+  gap: 20px;
+}
+
+.wel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.block_text {
+  h1 {
+    color: rgb(0, 74, 96);
+    font-family: Frank Ruhl Libre;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 62px;
+    letter-spacing: 3%;
+    text-align: center;
+  }
+}
+
+.welcome {
+  padding-left: 60px;
+  p {
+    color: rgb(36, 36, 36);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 3%;
+  }
+}
+
+.welcome_signUp {
+  span {
+    color: red;
+  }
+  p {
+    color: rgb(39, 49, 56);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+  }
+  input {
+    background-color: #f7f7f7;
+    gap: 10px;
+    width: 240px;
+    border: 1px solid rgba(39, 49, 56, 0.51);
+    border-radius: 7px;
+
+    padding: 8px 20px 8px;
+    outline: none;
+  }
+}
+.toggleswitch {
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 21px;
+  cursor: pointer;
+}
+
+.toggleswitch input[type="checkbox"] {
+  display: none;
+}
+
+.toggleswitchbackground {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: #ddd;
+  border-radius: 20px;
+  box-shadow: inset 0 0 0 2px #ccc;
+
+  transition: background-color 0.3s ease-in-out;
+}
+
+.toggleswitchhandle {
+  position: absolute;
+  top: 1.5px;
+  left: 2px;
+  width: 18px;
+  height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.toggleswitch::before {
+  content: "";
+  // position: absolute;
+  // top: -25px;
+  // right: 25px;
+  // font-size: 12px;
+  font-weight: bold;
+  color: #aaa;
+  text-shadow: 1px 1px #fff;
+  transition: color 0.3s ease-in-out;
+}
+
+.toggleswitch input[type="checkbox"]:checked + .toggleswitchhandle {
+  // transform: translateX(45px);
+  // box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2), 0 0 0 3px #05c46b;
+}
+
+.toggleswitch input[type="checkbox"]:checked + .toggleswitchbackground {
+  background-color: #007bff;
+  box-shadow: inset 0 0 0 2px#007bff;
+}
+
+.toggleswitch input[type="checkbox"]:checked + .toggleswitch:before {
+  content: "On";
+  color: #05c46b;
+  // right: 10px;
+}
+
+.toggleswitch
+  input[type="checkbox"]:checked
+  + .toggleswitchbackground
+  .toggleswitchhandle {
+  transform: translateX(15px);
+}
+
+.rem {
+  padding-left: 58px;
+  gap: 10px;
+  align-items: center;
+  display: flex;
+  p {
+    color: rgb(134, 136, 137);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+  }
+}
+
+.btn {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  button {
+    border-radius: 8px;
+
+    /* H1 */
+    background: rgb(0, 74, 96);
+    color: rgb(255, 255, 255);
+    font-family: Frank Ruhl Libre;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0%;
+    padding: 7px 220px 7px;
+  }
+}
+
+.log {
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  display: flex;
+  h6 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+  }
+  p {
+    color: blue;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 3%;
+    text-align: center;
+  }
 }

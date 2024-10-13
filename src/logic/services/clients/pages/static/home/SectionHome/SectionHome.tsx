@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import s from "./SectionHome.module.scss";
-import secImg from "./img/image 954.png"; // Фоновое изображение
+import secImg from "./img/image 954.png";
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
 import { Pagination } from "@mui/material";
@@ -12,8 +12,8 @@ const SectionHome = () => {
   console.log(data);
 
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const itemsPerPage = 1; // Изменено на 1 элемент на странице
-  const totalPages = Math.ceil(data.length / itemsPerPage); // Общее количество страниц
+  const itemsPerPage = 1;
+  const totalPages = Math.ceil(data.length / itemsPerPage);
 
   const handlePageChange = (
     event: React.ChangeEvent<unknown>,
