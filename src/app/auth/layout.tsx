@@ -1,5 +1,6 @@
 import LayoutAuth from "@/logic/services/auth/layout/LayoutAuth/LayoutAuth";
 import ReduxProvider from "@/provider/ReduxProvider";
+import SessionProvider from "@/provider/SessionProvider";
 import React, { Children, ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {

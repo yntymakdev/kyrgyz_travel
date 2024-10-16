@@ -75,12 +75,12 @@ const Header = () => {
                 <option>Рус</option>
                 <option>Кыр</option>
               </select>
-              <Link href={"/auth/user"}>
+              {/* <Link href={"/auth/user"}>
                 <Image className={s.image_user} src={user} alt="image" width={35} height={35} quality={70} />
+              </Link> */}
+              <Link href={"/auth/sign-up"}>
+                <button className={s.header_btn_two}>Sign Up</button>
               </Link>
-              {/* <Link href={"/auth/sign-up"}>
-                  <button className={s.header_btn_two}>Sign Up</button>
-                </Link> */}
             </div>
           </div>
         </div>

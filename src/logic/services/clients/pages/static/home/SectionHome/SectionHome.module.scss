@@ -33,15 +33,14 @@
 }
 
 .overlay {
-  // position: absolute; /* Абсолютное позиционирование для наложения */
   top: 0;
-  left: -12; /* Вернем в исходное положение */
-  width: 123.4%; /* Занимает всю ширину родителя */
+  left: -12;
+  width: 123.4%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.5); /* Полупрозрачный фон */
-  backdrop-filter: blur(15px); /* Эффект размытия фона */
-  border-radius: 10px; /* Закругленные углы */
-  z-index: 1; /* Убедитесь, что overlay выше изображения */
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  z-index: 1;
 }
 
 .secImg {

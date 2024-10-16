@@ -40,27 +40,50 @@
 
 @media (max-width: 1280px) {
   .secImgAdap {
-    // height: 10px;
     width: 100%;
-  }
-  // .imageText {
-  //   margin-left: 20px;
-  // }
-  .contai {
-    width: 100%;
+
+    .contai {
+      width: 100%;
+    }
   }
 }
 @media (max-width: 1124px) {
+  .imageText {
+    padding-left: 13%;
+  }
   .secImgAdap {
-    // height: 10px;
     width: 130%;
   }
 
   .contai {
-    width: 90%;
+    width: 115%;
+  }
+  .contai {
+    p {
+      color: white;
+      font-family: "Frank Ruhl Libre";
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 5%;
+      margin: 0;
+      padding: 10px 10px;
+      width: auto;
+      max-width: 250px;
+    }
   }
 }
 
+@media (max-width: 900px) {
+  .imageText {
+    padding-left: 23%;
+  }
+  .secImgAdap {
+    width: 156.4%;
+  }
+  .contai {
+    width: 128%;
+  }
+}
 @media (max-width: 393px) {
   .secImg {
     width: 300px !important;
@@ -73,7 +96,7 @@
   text-align: center;
   flex-direction: column;
   z-index: -1;
-  position: relative; /*Убедитесь, что это значение установлено */
+  position: relative;
 }
 
 .imageText {
