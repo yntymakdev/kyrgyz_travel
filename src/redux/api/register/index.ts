@@ -3,15 +3,15 @@ import { PostRequestUserRegistration, PostResponseUserRegistration } from "./typ
 
 const api = index.injectEndpoints({
   endpoints: (build) => ({
-    getPost_register: build.mutation<PostResponseUserRegistration, PostRequestUserRegistration>({
+    Post_register: build.mutation<PostResponseUserRegistration, PostRequestUserRegistration>({
       query: (data) => ({
         url: "/register/",
         method: "POST",
-        body: { user: data }, // Убедитесь, что данные обернуты в объект user
+        body: data,
       }),
       invalidatesTags: ["register"],
     }),
   }),
 });
 
-export const { useGetPost_registerMutation } = api;
+export const { usePost_registerMutation } = api;

@@ -1,3 +1,7 @@
+// @media(max-width: 1280px){
+
+// }
+
 .block {
   display: flex;
   gap: 50px;
@@ -47,6 +51,15 @@
   }
 }
 
+//???? FOOODDDDD
+@media (max-width: 1280px) {
+  .box {
+    p {
+      width: 200px;
+    }
+  }
+}
+
 .cont_box {
   padding-top: 120px;
 }
@@ -92,6 +105,8 @@
     letter-spacing: 0%;
   }
 }
+
+//????? BOX
 
 .headBox {
   position: relative;

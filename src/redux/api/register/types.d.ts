@@ -1,14 +1,3 @@
-// Тип данных, который возвращается с сервера после регистрации
-export interface PostResponseUserRegistration {
-  user: {
-    user: RegistrationFormData;
-    id: string;
-    email: string;
-    token: string;
-    // другие поля, которые возвращает API
-  };
-}
-
 // Тип данных для отправки запроса на регистрацию
 export type PostRequestUserRegistration = {
   user: {
@@ -22,3 +11,13 @@ export type PostRequestUserRegistration = {
     last_name: string;
   };
 };
+
+export interface PostResponseUserRegistration {
+  user: {
+    id: string; // ID пользователя
+    email: string; // Электронная почта
+    username: string; // Имя пользователя
+    token: string; // Токен авторизации
+    // другие поля, которые возвращает API
+  };
+}

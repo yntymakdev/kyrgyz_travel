@@ -1,10 +1,18 @@
 import { api as index } from "..";
+import { REGION } from "./types";
 
 const api = index.injectEndpoints({
   endpoints: (build) => ({
-    getPost_region: build.query<REGION.RegionsResponse, REGION.RegionRequest>({
-      query: (arg) => ({
-        url: "/region/{region_name}",
+    getPost_region_all: build.query<REGION.RegionsResponseAll, void>({
+      query: () => ({
+        url: "/region",
+        method: "GET",
+      }),
+      providesTags: ["region"],
+    }),
+    getPost_region: build.query<REGION.RegionsResponse, string>({
+      query: (id) => ({
+        url: `/region/${id}/`,
         method: "GET",
       }),
       providesTags: ["region"],
@@ -12,4 +20,4 @@ const api = index.injectEndpoints({
   }),
 });
 
-export const { useGetPost_regionQuery } = api;
+export const { useGetPost_regionQuery, useGetPost_region_allQuery } = api;

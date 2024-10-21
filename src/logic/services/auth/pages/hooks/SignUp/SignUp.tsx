@@ -1,12 +1,10 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import s from "./SignUp.module.scss";
 import Link from "next/link";
-import { useGetPost_registerMutation } from "@/redux/api/register";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { PostRequestUserRegistration, PostResponseUserRegistration } from "@/redux/api/register/types";
+import { usePost_registerMutation } from "@/redux/api/register";
 
-// Тип данных для отправки формы регистрации
 type RegistrationFormData = {
   email: string;
   username: string;
@@ -26,37 +24,35 @@ const SignUp = () => {
     watch,
   } = useForm<RegistrationFormData>();
 
-  const password = watch("password"); // Для проверки совпадения паролей
+  const password = watch("password");
 
-  // Используем хук для мутации
-  const [registerUser, { isLoading, error }] = useGetPost_registerMutation();
+  const [registerUser, { isLoading, error }] = usePost_registerMutation();
+
   const onSubmit: SubmitHandler<RegistrationFormData> = async (formData) => {
-    const requestData: PostRequestUserRegistration = {
+    const requestData = {
       user: {
         email: formData.email,
         username: formData.username,
         password: formData.password,
         password_confirm: formData.password_confirm,
         birth_date: formData.birth_date,
-        phone_number: formData.phone_number, // Убедитесь, что это строка
+        phone_number: formData.phone_number,
         first_name: formData.first_name,
         last_name: formData.last_name,
       },
     };
-
-    console.log("Данные перед отправкой в registerUser:", requestData);
 
     try {
       const response = await registerUser(requestData).unwrap();
       console.log("Ответ от сервера:", response);
     } catch (err) {
       console.error("Ошибка при регистрации:", err);
-      // Обработка ошибки, чтобы увидеть детали
       if ("data" in err) {
         console.error("Ответ сервера с ошибкой:", err.data);
       }
     }
   };
+
   return (
     <div className={s.signUp}>
       <div className="container">
@@ -92,7 +88,7 @@ const SignUp = () => {
                     required: "Имя пользователя обязательно",
                   })}
                 />
-                {/* {errors.username && <p>{errors.username.message}</p>} */}
+                {errors.username && <p>{errors.username.message}</p>}
 
                 <input
                   type="password"
@@ -183,7 +179,7 @@ const SignUp = () => {
                   <button type="submit" disabled={isLoading}>
                     {isLoading ? "Loading..." : "Sign Up"}
                   </button>
-                  {error && <p>Произошла ошибка: {error.message}</p>} {/* Отображение ошибки */}
+                  {error && <p>Произошла ошибка: {error?.data?.message || "Неизвестная ошибка"}</p>}
                 </div>
 
                 <div className={s.log}>

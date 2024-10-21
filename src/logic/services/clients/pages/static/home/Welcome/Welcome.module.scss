@@ -26,6 +26,34 @@
     }
   }
 }
+@media (max-width: 1024px) {
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding-left: 30%;
+    h1 {
+      color: rgb(0, 74, 96);
+      font-family: "Abril Fatface";
+      font-size: 44px;
+      font-weight: 400;
+      line-height: 46px;
+      letter-spacing: 0%;
+      margin-top: -10px;
+    }
+    p {
+      color: rgb(36, 36, 36);
+      font-family: Frank Ruhl Libre;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 140%;
+      letter-spacing: 15%;
+      width: 440px;
+      // text-align: left;
+    }
+  }
+}
 .img {
   display: flex;
   justify-content: center;

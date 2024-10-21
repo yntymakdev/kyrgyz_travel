@@ -26,22 +26,14 @@ const Welcome = () => {
       <div className={s.section}>
         <div className="container">
           <div className={s.img}>
-            <Image
-              src={secImg}
-              alt="img"
-              quality={70}
-              width={384}
-              height={304}
-            />
+            <Image src={secImg} alt="img" quality={70} width={384} height={304} />
             <div className={s.text}>
               <h1>Bishkek</h1>
               <br />
               <p>
-                This is the capital of a picturesque mountainous <br /> country
-                - Kyrgyzstan, from where tourists make trips to the
-                world-famous, crystal-clear Issyk-Kul and other natural
-                attractions of the Tien Shan. Framed by mountains, the city is
-                rich in beautiful views, monumental monuments, parks and museum
+                This is the capital of a picturesque mountainous <br /> country - Kyrgyzstan, from where tourists make
+                trips to the world-famous, crystal-clear Issyk-Kul and other natural attractions of the Tien Shan.
+                Framed by mountains, the city is rich in beautiful views, monumental monuments, parks and museum
                 antiquities.
               </p>
             </div>
@@ -65,9 +57,9 @@ const Welcome = () => {
                       className={s.image_place}
                       src={attraction.attraction_photos[0].image} // Предполагаем, что это URL
                       alt={attraction.at_name}
-                      width={340} // Задаем ширину
-                      height={270} // Задаем высоту
-                      quality={70} // Задаем качество
+                      width={340}
+                      height={270}
+                      quality={70}
                     />
                   )}
 
