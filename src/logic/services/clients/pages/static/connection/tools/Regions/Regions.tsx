@@ -1,5 +1,4 @@
 "use client";
-import React, { useState } from "react";
 import s from "./Regions.module.scss";
 import Image from "next/image";
 import img from "./img/Rectangle 142.png";
@@ -17,51 +16,48 @@ import { MoveRight } from "lucide-react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import sa from "../../../home/Welcome/Welcome.module.scss";
 import { useGetPost_regionQuery } from "@/redux/api/region";
-import { useGetPost_regionFoodQuery } from "@/redux/api/region_food";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useParams, useRouter } from "next/navigation";
+import { useGetPost_regionFoodQuery } from "@/redux/api/region_food";
 
-const Regions = () => {
-  const {
-    data: regionData,
-    isLoading: isRegionLoading,
-    isError: isRegionError,
-  } = useGetPost_regionQuery();
+const Regions = ({ regionId }: { regionId: number }) => {
+  const params = useParams();
+  const id = params.id;
 
-  const {
-    data: foodData,
-    isLoading: isFoodLoading,
-    isError: isFoodError,
-  } = useGetPost_regionFoodQuery();
-  console.log(foodData);
-  console.log(regionData);
+  if (!id) return <div>Неверный ID региона</div>;
 
+  const { data: region, isLoading: isRegionLoading, error: regionError } = useGetPost_regionQuery(id as string);
+  const { data, isLoading, error } = useGetPost_regionFoodQuery(
+    { region_id: regionId } // Передаем объект FoodRequest
+  );
+  if (isRegionLoading) return <div>Загрузка региона...</div>;
+  if (regionError) {
+    console.error("Ошибка при загрузке региона:", regionError);
+    return <div>Ошибка: {regionError.message}</div>;
+  }
+
+  if (!region) return <div>Регион не найден</div>;
   return (
     <div>
       <div className={s.regions}>
         <div className="container">
           <div className={s.block}>
             <div className={s.img}>
-              <Image
-                src={img}
-                alt="Background Image"
-                quality={70}
-                width={590}
-                height={423}
-              />
+              {/* <Image src={img} alt="Background Image" quality={70} width={590} height={423} /> */}
+              {region.reg_photos.map((photo, index) => (
+                <img key={index} src={photo.image} alt={`Фото ${index + 1}`} />
+              ))}
             </div>
+
             <div className={s.para}>
-              <h1>Issyk-Kul</h1>
-              <p>
-                Issyk-Kul is an endorheic lake (i.e., without outflow) in the
-                Northern Tian Shan mountains in Eastern Kyrgyzstan. It is the
-                seventh-deepest lake in the world, the tenth-largest lake in the
-                world by volume and the second-largest saline lake after the
-                Caspian Sea. Issyk-Kul means "warm lake" in the Kyrgyz language;
-                although it is located at a lofty elevation of 1,607 metres and
-                subject to severe cold during winter, it rarely freezes, due to
-                the salinity.
-              </p>
+              {/* <h1>Issyk-Kul</h1> */}
+              <h1>{region.region_name}</h1>
+              <p>{region.description}</p>
+              {/* Issyk-Kul is an endorheic lake (i.e., without outflow) in the Northern Tian Shan mountains in Eastern
+                Kyrgyzstan. It is the seventh-deepest lake in the world, the tenth-largest lake in the world by volume
+                and the second-largest saline lake after the Caspian Sea. Issyk-Kul means "warm lake" in the Kyrgyz
+                language; although it is located at a lofty elevation of 1,607 metres and subject to severe cold during
+                winter, it rarely freezes, due to the salinity. */}
             </div>
           </div>
           <div className={s.block_carta}>
@@ -129,12 +125,10 @@ const Regions = () => {
                 <h1>Ashlyan-fu</h1>
                 <br />
                 <p>
-                  The name of the dish sounds and is spelled differently:
-                  ashlyanfu, ashlyamfu, and even ash-lyanfu.The hallmark of
-                  Karakol is ashlyam-fu, a spicy Dungan soup served cold. The
-                  main ingredients of ashlam-fu are two types of noodles:
-                  regular, wheat flour and starch. These noodles are seasoned
-                  with cold broth, spicy laza and lots of herbs.
+                  The name of the dish sounds and is spelled differently: ashlyanfu, ashlyamfu, and even ash-lyanfu.The
+                  hallmark of Karakol is ashlyam-fu, a spicy Dungan soup served cold. The main ingredients of ashlam-fu
+                  are two types of noodles: regular, wheat flour and starch. These noodles are seasoned with cold broth,
+                  spicy laza and lots of herbs.
                 </p>
               </div>
               <div className={s.image}>
@@ -175,12 +169,10 @@ const Regions = () => {
                 <h1>Ashlyan-fu</h1>
                 <br />
                 <p>
-                  The name of the dish sounds and is spelled differently:
-                  ashlyanfu, ashlyamfu, and even ash-lyanfu.The hallmark of
-                  Karakol is ashlyam-fu, a spicy Dungan soup served cold. The
-                  main ingredients of ashlam-fu are two types of noodles:
-                  regular, wheat flour and starch. These noodles are seasoned
-                  with cold broth, spicy laza and lots of herbs.
+                  The name of the dish sounds and is spelled differently: ashlyanfu, ashlyamfu, and even ash-lyanfu.The
+                  hallmark of Karakol is ashlyam-fu, a spicy Dungan soup served cold. The main ingredients of ashlam-fu
+                  are two types of noodles: regular, wheat flour and starch. These noodles are seasoned with cold broth,
+                  spicy laza and lots of herbs.
                 </p>
               </div>
             </div>

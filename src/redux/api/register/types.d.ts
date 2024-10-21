@@ -1,5 +1,6 @@
-namespace REGISTER {
-  type PostRequestUserRegistration = {
+// Тип данных для отправки запроса на регистрацию
+export type PostRequestUserRegistration = {
+  user: {
     email: string;
     username: string;
     password: string;
@@ -9,12 +10,14 @@ namespace REGISTER {
     first_name: string;
     last_name: string;
   };
+};
 
-  type PostResponceUserRegistration = {
-    user: {
-      email: string;
-      username: string;
-      token: string;
-    };
+export interface PostResponseUserRegistration {
+  user: {
+    id: string; // ID пользователя
+    email: string; // Электронная почта
+    username: string; // Имя пользователя
+    token: string; // Токен авторизации
+    // другие поля, которые возвращает API
   };
 }

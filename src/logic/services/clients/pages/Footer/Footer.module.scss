@@ -1,10 +1,11 @@
-// .footer {
-//   padding-top: 110px;
-// }
-@media (max-width: 1280px) {
+.footer {
+  padding-top: 110px;
+}
+@media (max-width: 1281px) {
   .fotoImg {
-    width: 10px;
+    width: 120%;
     height: 10px;
+    padding-left: 100%;
   }
 }
 @media (max-width: 1024px) {
@@ -16,21 +17,16 @@
 
 .fotImg {
   background: url("./img/Rectangle\ 18.png") no-repeat center center;
-  // position: relative;;
-  background-size: contain;
-  width: 1228.5px;
-  height: 333px;
-  margin-left: -150px;
-  // display: flex;
-  // justify-content: center;
+  position: relative;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .overlayContent {
-  // position: absolute;
-  // top: 30px;
-  // left: 0;
-  // width: 100%;
-  //   height: 5  0%;
+  padding: 20px;
 }
 
 .fotLike {
@@ -51,7 +47,7 @@
 
 .fut {
   h1 {
-    color: white; // белый цвет для заголовков на фоне изображения
+    color: white;
     font-family: Frank Ruhl Libre;
     font-size: 24px;
     font-weight: 700;
@@ -60,7 +56,7 @@
     // text-align: left;
   }
   p {
-    color: white; // белый цвет для текста
+    color: white;
     font-family: Frank Ruhl Libre;
     font-size: 14px;
     font-weight: 700;

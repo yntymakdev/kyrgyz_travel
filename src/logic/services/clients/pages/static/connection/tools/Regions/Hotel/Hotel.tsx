@@ -1,20 +1,19 @@
 "use client";
 import React from "react";
-import s from "./RegionsDetail.module.scss";
 import Image from "next/image";
 import img from "./img/Rectangle 146.png";
-import sa from "../../../home/Cart/Cart.module.scss";
+import sa from "../../../../home/Cart/Cart.module.scss";
 import RoomOutlinedIcon from "@mui/icons-material/RoomOutlined";
 import DirectionsWalkOutlinedIcon from "@mui/icons-material/DirectionsWalkOutlined";
 import DirectionsBusFilledOutlinedIcon from "@mui/icons-material/DirectionsBusFilledOutlined";
 import DirectionsRailwayFilledOutlinedIcon from "@mui/icons-material/DirectionsRailwayFilledOutlined";
 import FlightTakeoffOutlinedIcon from "@mui/icons-material/FlightTakeoffOutlined";
-import ReviewPage from "../Review/ReviewPage";
 import vector_place from "./img/Vector (3).png";
 import { useParams } from "react-router-dom";
+import su from "./Hotel.module.scss";
+import s from "../../RegionsDetail/RegionsDetail.module.scss";
 import { useGetPost_regionQuery } from "@/redux/api/region";
-import Link from "next/link";
-const RegionsDetail = () => {
+const Hotel = () => {
   // const { id } = useParams(); // Получаем динамический параметр id из URL
   // const { data, error, isLoading } = useGetPost_regionQuery({ id });
   // if (isLoading) return <div>Загрузка...</div>;
@@ -47,7 +46,7 @@ const RegionsDetail = () => {
           </div>
           <div className={s.hero_sec}>
             <div className={s.btn}>
-              <button className={s.bt}> Places</button>{" "}
+              <button className={s.button}> Places</button>{" "}
               {/* <Image
                 className={s.vector_place}
                 src={vector_place}
@@ -56,11 +55,8 @@ const RegionsDetail = () => {
                 width={20}
                 height={21}
               /> */}
-              <Link href={"/regions/hotel"}>
-                <button className={s.bt}> Hotels</button>
-              </Link>
-              <button className={s.bt}> kitchen</button> <button className={s.bt}> Event</button>{" "}
-              <button className={s.bt}> Attractions</button>{" "}
+              <button className={s.bt}> Hotels</button> <button className={s.bt}> kitchen</button>{" "}
+              <button className={s.bt}> Event</button> <button className={s.bt}> Attractions</button>{" "}
             </div>
           </div>
           <br />
@@ -131,11 +127,11 @@ const RegionsDetail = () => {
               height="450"
             ></iframe>
           </div>
-          <ReviewPage />
+          {/* <ReviewPage /> */}
         </div>
       </div>
     </div>
   );
 };
 
-export default RegionsDetail;
+export default Hotel;

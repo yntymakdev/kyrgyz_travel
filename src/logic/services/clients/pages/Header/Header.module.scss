@@ -3,34 +3,44 @@
     width: 100%;
   }
 }
-@media (max-width: 1280px) {
+@media (max-width: 1281px) {
   .header {
-    width: 100%;
+    width: 102.5%;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
   .header {
-    max-width: 90%;
+    width: 114.8%;
+  }
+}
+@media (max-width: 1124px) {
+  .header {
+    width: 114.8%;
+  }
+}
+@media (max-width: 900px) {
+  .header {
+    width: 128.1%;
   }
 }
 
 .header {
   align-items: center;
   display: flex;
-  justify-content: center; /* Центрируем содержимое */
-  background-color: rgba(152, 186, 205, 0.7); /* Прозрачный цвет фона */
+  justify-content: center;
+  background-color: rgba(152, 186, 205, 0.7);
   padding: 20px;
-  backdrop-filter: blur(10px); /* Эффект размытия фона */
+  backdrop-filter: blur(10px);
 }
 .cont {
   display: flex;
-  justify-content: space-between; /* Чтобы разделить текст и кнопки */
+  justify-content: space-between;
   align-items: center;
-  width: 100%; /* Занять всю ширину контейнера */
+  width: 100%;
 }
 .head_home {
   display: flex;
-  justify-content: center; /* Это разделяет текст и кнопки */
+  justify-content: center;
   align-items: center;
   gap: 200px;
 
@@ -50,16 +60,15 @@
   gap: 50px;
 }
 .chevronIcon {
-  margin-left: 5px; /* Отступ слева для иконки, чтобы отделить ее от текста */
-  width: 16px; /* Задайте нужный размер иконки */
-  height: 16px; /* Задайте нужный размер иконки */
+  margin-left: 5px;
+  width: 16px;
+  height: 16px;
 }
 .btn_home {
   justify-content: flex-end;
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  // padding-left: 80px;
 }
 
 .header_btn {

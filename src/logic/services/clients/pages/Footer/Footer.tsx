@@ -6,15 +6,9 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <div className={s.footer}>
-      <div className="container">
-        <div className={s.fotImg}>
-          {/* <Image
-            src={footerCarta}
-            alt="Foreground Image"
-            quality={70}
-            width={1579}
-            height={368}
-          /> */}
+      <div className={s.fotImg}>
+        <div className="container">
+          {/* <Image src={footerCarta} alt="Foreground Image" quality={70} width={1579} height={368} /> */}
           <div className={s.overlayContent}>
             <div className={s.fot}>
               <p>logo</p>

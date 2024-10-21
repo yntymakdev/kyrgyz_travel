@@ -5,9 +5,21 @@ import { ArrowUpRight, ChevronDown, LinkIcon, Search } from "lucide-react";
 import user from "./image/Vector (5).png";
 import Image from "next/image";
 import Link from "next/link";
+import { useGetPost_region_allQuery } from "@/redux/api/region";
+import RegionList from "../static/connection/tools/Regions/RegionList/RegionList";
 const Header = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [showDrop, setShowDrop] = useState(false);
+  // const { data: regions, isLoading: isRegionsLoading, error: regionsError } = useGetPost_region_allQuery();
+
+  // if (isRegionsLoading) return <div>Загрузка регионов...</div>;
+  // if (regionsError) {
+  //   console.error("Ошибка при загрузке регионов:", regionsError);
+  //   return <div>Ошибка при загрузке регионов: {regionsError.message}</div>;
+  // }
+
+  // if (!regions || regions.length === 0) return <div>Нет доступных регионов.</div>;
+
   return (
     <div>
       <div className={s.header}>
@@ -18,12 +30,18 @@ const Header = () => {
                 <h1>Home</h1>
               </Link>
               <div className={s.gall} onMouseEnter={() => setShowDrop(true)} onMouseLeave={() => setShowDrop(false)}>
-                <Link href={"/regions"}>
-                  <h1>Region</h1>
-                </Link>
+                {/* <Link href={"/regions"}> */}
+                <h1>Region</h1>
+                {/* </Link> */}
                 {showDrop && (
                   <div className={s.drop}>
-                    <Link href={"/regions/batken"}>
+                    <RegionList />
+                    {/* {regions.map((region) => (
+                      <li key={region.region_name}>
+                        <Link href={`/regions/${region.id}`}>{region.region_name}</Link>
+                      </li>
+                    ))} */}
+                    {/* <Link href={"/regions/batken"}>
                       <p>Batken</p>
                     </Link>
                     <Link href={"/regions/jalalabad"}>
@@ -43,7 +61,7 @@ const Header = () => {
                     </Link>
                     <Link href={"/regions/chuy"}>
                       <p>Chuy</p>
-                    </Link>
+                    </Link> */}
                   </div>
                 )}
               </div>
@@ -75,12 +93,12 @@ const Header = () => {
                 <option>Рус</option>
                 <option>Кыр</option>
               </select>
-              <Link href={"/auth/user"}>
+              {/* <Link href={"/auth/user"}>
                 <Image className={s.image_user} src={user} alt="image" width={35} height={35} quality={70} />
+              </Link> */}
+              <Link href={"/auth/sign-up"}>
+                <button className={s.header_btn_two}>Sign Up</button>
               </Link>
-              {/* <Link href={"/auth/sign-up"}>
-                  <button className={s.header_btn_two}>Sign Up</button>
-                </Link> */}
             </div>
           </div>
         </div>

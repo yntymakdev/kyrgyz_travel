@@ -22,13 +22,7 @@ const Cart = () => {
           <br />
           <br />
           <div className={s.imgCard}>
-            <Image
-              src={carta}
-              alt="Foreground Image"
-              quality={70}
-              width={1200}
-              height={590}
-            />
+            <Image className={s.carta} src={carta} alt="Foreground Image" quality={70} width={1200} height={590} />
           </div>
         </div>
       </div>
